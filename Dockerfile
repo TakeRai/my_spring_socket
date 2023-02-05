@@ -6,4 +6,4 @@ FROM openjdk:19-jdk-slim
 COPY --from=build /target/my_spring_socket-0.0.1-SNAPSHOT.jar my_spring_socket.jar
 
 EXPOSE 8080
-ENTRYPOINT [ "java", "-jar", "demo.jar" ]
+ENTRYPOINT [ "java", "-jar", "my_spring_socket.jar" ]
